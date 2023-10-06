@@ -22,3 +22,17 @@
     letter-spacing: -0.025em;
     color: #fff;
 }
+.form-control {
+    outline: none;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: rgb(255 255 255 );
+    padding: 0.5rem 0.875rem;
+    background-color: rgb(255 255 255 / 0.05);
+    border: 1px solid rgba(253, 253, 253, 0.363);
+    border-radius: 0.375rem;
+    flex: 1 1 auto;
+}
+.form-label {
+    color: rgb(216, 212, 212);
+}
