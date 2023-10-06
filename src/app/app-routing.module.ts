@@ -5,23 +5,36 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { DailyquoteComponent } from './dailyquote/dailyquote.component';
 import { QoutesComponent } from './qoutes/qoutes.component';
 import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    redirectTo: "dailyquote"
+    path: '',
+    pathMatch: 'full',
+    redirectTo: '/home'
   },
   {
-    path: 'dailyquote', 
-    component: DailyquoteComponent
+     path: 'home', 
+     component: HomeComponent,
+     title: 'Daily Quotes Page'
+  },
+  { 
+    path: 'about', 
+    component: AboutComponent,
+    title: 'About Page'
   },
   {
     path: 'quotes', 
-    component: QoutesComponent
+    component: QoutesComponent,
+    title: 'Quotes Page' 
   },
   {
-    path: 'about', 
-    component: AboutComponent
+    path: 'subscribe', 
+    component: SubscribeComponent,
+    title: 'Subscribe' 
   }
+
+
   
 
 ];
