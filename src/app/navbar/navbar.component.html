@@ -9,9 +9,21 @@
     </div>
     <ul class="nav-links" [ngClass]="{'open': isNavOpen}">
       <!-- <li><a href="/">Home</a></li> -->
-      <li><a href="/">Quote of the Day</a></li>
-      <li><a href="/">Quotes</a></li>
-      <li><a href="/">About us</a></li> 
+      <li>
+        <a routerLink="/home">
+            Quote of the Day
+        </a>
+      </li>
+      <li>
+        <a routerLink="/quotes">
+            Quotes
+        </a>
+      </li>
+      <li>
+        <a routerLink="/about">
+            About us
+        </a>
+      </li> 
       <!-- <li><a href="/">Topics</a></li> -->
       
       <li><button class="login-button" href="/">Login</button></li>
